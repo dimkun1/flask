@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cookie 2</title>
+</head>
+<body>
+  {% if session.username %}
+    <h1>Привет {{ session.username }}</h1>
+    <a href="/logout2/">Logout</a>
+  {% else %}
+    <a href="/login2/">Login</a>
+  {% endif %}
+</body>
+</html>
